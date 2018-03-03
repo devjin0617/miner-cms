@@ -20,7 +20,7 @@
         ></balance-banner>
       </el-col>
       <el-col :span="6">
-        <h2>Miner Hash</h2>
+        <h2>Miner Hashrate</h2>
         <hash-banner v-for="(item, index) in hashList" :key="index"
           :name="item.name"
           :simbol="item.simbol"
