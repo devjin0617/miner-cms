@@ -1,13 +1,17 @@
 <template>
   <div>
-    <el-row :gutter="20">
-      <el-col v-for="(item, index) in minerList" :span="6" :key="index">
-        <miner-banner :title="item.title" :text="item.text"></miner-banner>
-      </el-col>
-    </el-row>
+    <div>
+      <h2>Miner List</h2>
+      <el-row :gutter="20">
+        <el-col v-for="(item, index) in minerList" :span="6" :key="index">
+          <miner-banner :title="item.title" :text="item.text"></miner-banner>
+        </el-col>
+      </el-row>
+    </div>
     <div class="top-margin"></div>
     <el-row :gutter="20">
       <el-col :span="6">
+        <h2>Balance</h2>
         <balance-banner v-for="(item, index) in balanceList" :key="index"
           :name="item.name"
           :simbol="item.simbol"
@@ -16,6 +20,7 @@
         ></balance-banner>
       </el-col>
       <el-col :span="6">
+        <h2>Miner Hash</h2>
         <hash-banner v-for="(item, index) in hashList" :key="index"
           :name="item.name"
           :simbol="item.simbol"
