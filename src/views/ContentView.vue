@@ -1,12 +1,23 @@
 <template>
   <div class="content-view">
-    ContentView
+    <el-row :gutter="20">
+      <el-col :span="6">
+        <miner-banner></miner-banner>
+      </el-col>
+      <el-col :span="6">
+        <miner-banner></miner-banner>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
+import { MinerBanner } from '@/components'
 export default {
-  name: 'content-view'
+  name: 'content-view',
+  components: {
+    MinerBanner
+  }
 }
 </script>
 
