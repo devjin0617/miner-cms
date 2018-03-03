@@ -1,6 +1,9 @@
 <template>
   <div class="miner-banner">
-
+    <div class="minder-banner-box">
+      <h1>P106</h1>
+      <p>4 MINER (24 WAY)</p>
+    </div>
   </div>
 </template>
 
@@ -14,7 +17,13 @@ export default {
 .miner-banner {
   width: 100%;
   height: 110px;
-  background-color: gray;
+  background-color: #409EFF;
+  color: white;
   border-radius: 5px;
+  line-height: normal;
+
+  .minder-banner-box {
+    padding: 5px 20px;
+  }
 }
 </style>
