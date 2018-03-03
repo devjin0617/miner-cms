@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-view">
     ContentView
   </div>
 </template>
@@ -9,3 +9,9 @@ export default {
   name: 'content-view'
 }
 </script>
+
+<style>
+.content-view {
+  height: 100%;
+}
+</style>
