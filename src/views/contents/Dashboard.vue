@@ -5,11 +5,20 @@
         <miner-banner :title="item.title" :text="item.text"></miner-banner>
       </el-col>
     </el-row>
+    <div class="top-margin"></div>
+    <el-row :gutter="20">
+      <el-col :span="6">
+        <balance-banner></balance-banner>
+        <balance-banner></balance-banner>
+      </el-col>
+      <el-col :span="6">
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-import { MinerBanner } from '@/components'
+import { MinerBanner, BalanceBanner } from '@/components'
 export default {
   name: 'dashboard',
   data () {
@@ -35,11 +44,14 @@ export default {
     }
   },
   components: {
-    MinerBanner
+    MinerBanner,
+    BalanceBanner
   }
 }
 </script>
 
 <style>
-
+.top-margin {
+  margin-top: 20px;
+}
 </style>
