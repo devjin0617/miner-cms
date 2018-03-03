@@ -1,6 +1,6 @@
 <template>
   <div class="miner-banner">
-    <div class="minder-banner-box">
+    <div class="miner-banner-box">
       <h1>{{ title }}</h1>
       <p>{{ text }}</p>
     </div>
@@ -23,7 +23,7 @@ export default {
   border-radius: 5px;
   line-height: normal;
 
-  .minder-banner-box {
+  .miner-banner-box {
     padding: 5px 20px;
   }
 }
