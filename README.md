@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+![](https://github.com/devjin0617/miner-cms/blob/master/image.png)
+
 ## Build Setup
 
 ``` bash
