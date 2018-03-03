@@ -1,22 +1,15 @@
 <template>
   <div class="content-view">
-    <el-row :gutter="20">
-      <el-col :span="6">
-        <miner-banner></miner-banner>
-      </el-col>
-      <el-col :span="6">
-        <miner-banner></miner-banner>
-      </el-col>
-    </el-row>
+    <dashboard></dashboard>
   </div>
 </template>
 
 <script>
-import { MinerBanner } from '@/components'
+import Dashboard from './contents/Dashboard'
 export default {
   name: 'content-view',
   components: {
-    MinerBanner
+    Dashboard
   }
 }
 </script>

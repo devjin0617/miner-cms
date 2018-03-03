@@ -1,15 +1,16 @@
 <template>
   <div class="miner-banner">
     <div class="minder-banner-box">
-      <h1>P106</h1>
-      <p>4 MINER (24 WAY)</p>
+      <h1>{{ title }}</h1>
+      <p>{{ text }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'miner-banner'
+  name: 'miner-banner',
+  props: ['title', 'text']
 }
 </script>
 
