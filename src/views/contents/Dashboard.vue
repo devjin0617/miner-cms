@@ -16,13 +16,19 @@
         ></balance-banner>
       </el-col>
       <el-col :span="6">
+        <hash-banner v-for="(item, index) in hashList" :key="index"
+          :name="item.name"
+          :simbol="item.simbol"
+          :image-url="item.imageUrl"
+          :hashValue="item.value"
+        ></hash-banner>
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-import { MinerBanner, BalanceBanner } from '@/components'
+import { MinerBanner, BalanceBanner, HashBanner } from '@/components'
 export default {
   name: 'dashboard',
   data () {
@@ -64,12 +70,33 @@ export default {
           imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1698.png',
           balance: '27.839'
         }
+      ],
+      hashList: [
+        {
+          name: 'Bitcoin',
+          simbol: 'BTC',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png',
+          value: '13.5'
+        },
+        {
+          name: 'Ethereum',
+          simbol: 'ETH',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png',
+          value: '120'
+        },
+        {
+          name: 'ZenCash',
+          simbol: 'ZEN',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1698.png',
+          value: '6.04'
+        }
       ]
     }
   },
   components: {
     MinerBanner,
-    BalanceBanner
+    BalanceBanner,
+    HashBanner
   }
 }
 </script>
