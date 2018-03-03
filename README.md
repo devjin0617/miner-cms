@@ -1,4 +1,4 @@
-# gpu-miner-cms
+# miner-cms
 
 > A Vue.js project
 
