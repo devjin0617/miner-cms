@@ -8,8 +8,12 @@
     <div class="top-margin"></div>
     <el-row :gutter="20">
       <el-col :span="6">
-        <balance-banner></balance-banner>
-        <balance-banner></balance-banner>
+        <balance-banner v-for="(item, index) in balanceList" :key="index"
+          :name="item.name"
+          :simbol="item.simbol"
+          :image-url="item.imageUrl"
+          :balance="item.balance"
+        ></balance-banner>
       </el-col>
       <el-col :span="6">
       </el-col>
@@ -39,6 +43,26 @@ export default {
         {
           title: 'ASIC D3',
           text: '1 MINER'
+        }
+      ],
+      balanceList: [
+        {
+          name: 'Bitcoin',
+          simbol: 'BTC',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png',
+          balance: '1.04857395'
+        },
+        {
+          name: 'Ethereum',
+          simbol: 'ETH',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png',
+          balance: '38.486934'
+        },
+        {
+          name: 'ZenCash',
+          simbol: 'ZEN',
+          imageUrl: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1698.png',
+          balance: '27.839'
         }
       ]
     }

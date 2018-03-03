@@ -2,12 +2,12 @@
   <div class="balance-banner">
     <div class="balance-banner-box">
       <div class="flex-item image-wrap">
-        <img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1.png">
+        <img :src="imageUrl">
       </div>
       <div style="flex:1;">
-        <h2>Bitcoin (BTC)</h2>
+        <h2>{{ name }} ({{ simbol }})</h2>
         <p>
-          1.04584938 BTC
+          {{ balance }} {{ simbol }}
         </p>
       </div>
     </div>
@@ -16,6 +16,7 @@
 
 <script>
 export default {
+  props: ['name', 'imageUrl', 'simbol', 'balance'],
   name: 'balance-banner'
 }
 </script>
